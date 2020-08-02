@@ -1,0 +1,36 @@
+{% load static %}
+
+<!DOCTYPE html>
+<html>
+    <head>
+        <title>
+            {% if page_title is not None %}
+                {{ page_title }} |
+            {% endif %}
+            mayettemondays
+        </title>
+        <link rel="stylesheet" href="{% static 'mmsite/style.css' %}">
+    </head>
+    <body>
+        <nav>
+            <a href="{% url 'index'%}">mayettemondays</a>
+            <ul>
+                <li>
+                    <a href="{% url 'index' %}">home</a>
+                </li>
+                <li>
+                    <a href="{% url 'my-story' %}">my story</a>
+                </li>
+                <li>
+                    <a href="{% url 'collections' %}">collections</a>
+                </li>
+                <li>
+                    <a href="{% url 'contact' %}">contact</a>
+                </li>
+            </ul>
+        </nav>
+
+        {% block body %}
+        {% endblock %}
+    </body>
+</html>
