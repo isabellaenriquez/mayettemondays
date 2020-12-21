@@ -1,13 +1,21 @@
 <!DOCTYPE html>
 <html>
-    <head>
-        <title>mayettemondays - {% block title %}{% endblock %}</title>
-        <link rel="stylesheet" href="../static/style.css">
-    </head>
-    <body>
-        <!--img banner?-->
-        <!--nav-->
-        {% block body %}
-        {% endblock %}
-    </body>
+
+<head>
+    <title>mayettemondays || {% block title %}{% endblock %}</title>
+    <meta name="description" content="Hi, my name is Mayette, and welcome to my world.">
+    <meta name="keywords" content="mayettemondays">
+    <meta name="viewport" content="width=device-width, initial-scale=1">
+    <link rel="stylesheet" href="../static/style.css">
+</head>
+
+<body>
+    <!--img banner?-->
+    <!--nav-->
+    <h5 id="site-name">@mayettemondays</h5>
+    
+    {% block body %}
+    {% endblock %}
+</body>
+
 </html>
