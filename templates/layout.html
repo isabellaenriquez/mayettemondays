@@ -3,17 +3,26 @@
 
 <head>
     <title>mayettemondays || {% block title %}{% endblock %}</title>
-    <meta name="description" content="Hi, my name is Mayette, and welcome to my world.">
+    <meta name="description" content="Hi, I'm Mayette, and welcome to my world.">
     <meta name="keywords" content="mayettemondays">
     <meta name="viewport" content="width=device-width, initial-scale=1">
     <link rel="stylesheet" href="../static/style.css">
+    <script src="{{ url_for('static', filename='index.js') }}"></script>
 </head>
 
 <body>
-    <!--img banner?-->
-    <!--nav-->
-    <h5 id="site-name">@mayettemondays</h5>
-    
+    <header>
+        <div id="nav-bar">
+            <a id="site-name">@mayettemondays</a>
+            <nav><!--please style-->
+                <a href="#">About Me</a>
+                <a href="#">Gallery</a>
+                <a href="#">My Collections</a>
+                <a href="#">Shop</a>
+                <a href="#">Contact</a>
+            </nav>
+        </div>
+    </header>
     {% block body %}
     {% endblock %}
 </body>
