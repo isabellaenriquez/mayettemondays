@@ -39,11 +39,6 @@ nav {
   text-align: center;
 }
 
-.container {
-  height: 90vh;
-  /* make this fill rest of space in JS later */
-}
-
 .vertical-center {
   display: flex;
   flex-direction: column;
@@ -86,25 +81,6 @@ nav {
   flex-direction: row;
 }
 
-/*#cutout{
-    position: absolute;
-    right: 0;
-    top: 0;
-    width: 100%;
-    height: 100%;
-    overflow: hidden;
-}
-
-#cutout-container {
-    display: inline-block;
-    position: relative;
-    width: 100%;
-    overflow: hidden;
-    position: absolute;
-    background: url(images/cutout.svg);
-    bottom: 0;
-    width: 100%;
-}*/
 #cutout {
   width: 100%;
   height: 100%;
@@ -114,30 +90,32 @@ nav {
   position: absolute;
   z-index: -1;
   width: 100vw;
-  height: 90vh;
-  top: 10vh;
-  /* size of nav; use JS later */
   right: 0;
   overflow: hidden;
 }
 
 #home-avatar {
   width: 75%;
+  justify-self: end;
+  animation-duration: 2s;
+}
+
+#home-text {
+  align-self: flex-start;
+}
+#home-text h1 {
+  animation-duration: 2s;
 }
 
 .next-to {
   display: grid;
-  grid-template-columns: 60% 40%;
+  grid-template-columns: 50% 50%;
 }
 .next-to h1 {
-  font-size: 3rem;
+  text-align: center;
+  margin: unset;
 }
 
-@media screen and (max-width: 894px) {
-  .next-to h1 {
-    font-size: 2.5rem;
-  }
-}
 @media screen and (max-width: 716px) {
   .btns {
     flex-direction: column;
