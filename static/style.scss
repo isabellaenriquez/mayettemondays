@@ -7,7 +7,8 @@ $mmgrey: #C7D1D1;
 @import url('https://fonts.googleapis.com/css2?family=Playfair+Display');
 
 body{
-    background: linear-gradient(180deg, $tiffany 0%, white 100%) no-repeat;
+    background: linear-gradient(180deg, $tiffany, white) no-repeat;
+    background-attachment: fixed;
     font-family: 'Playfair Display';
     padding: 1rem 2rem 0rem 2rem;
 }
@@ -107,7 +108,6 @@ nav{
 }
 
 #home-text{
-    align-self: flex-start;
     h1{
         animation-duration: 2s;
     }
@@ -117,11 +117,9 @@ nav{
     display: grid;
     grid-template-columns: 50% 50%;
     h1{
-        //font-size: 2.5rem;
         text-align: center;
         margin: unset;
     }
-    //justify-items: end;
 }
 
 // do we still need this?
@@ -142,4 +140,13 @@ nav{
         }
     }
 
+}
+
+#about-section{
+    padding: 5rem;
+    text-align: center;
+    img{
+        height: 50vh;
+        margin: auto;
+    }
 }
