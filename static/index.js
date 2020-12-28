@@ -25,7 +25,11 @@ document.addEventListener('DOMContentLoaded', () => {
         let cutoutContainer = document.getElementById('cutout-container');
 
         let [, , containerHeight] = setContainerHeight();
-        cutoutContainer.style.height = containerHeight + "px";
+        try{
+            cutoutContainer.style.height = containerHeight + "px";
+        }catch (err){
+            console.log('Not on home page.');
+        }
     }
 
     window.addEventListener('resize', resizeElements);

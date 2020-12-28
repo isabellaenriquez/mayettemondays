@@ -131,12 +131,17 @@ nav {
     font-size: 1.5rem;
   }
 }
-#about-section {
-  padding: 5rem;
+#about-page {
   text-align: center;
 }
-#about-section img {
+#about-page img {
   height: 50vh;
+}
+
+.page {
+  padding: 5rem;
+}
+.page > {
   margin: auto;
 }
 

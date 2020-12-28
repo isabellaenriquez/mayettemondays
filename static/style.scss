@@ -142,11 +142,16 @@ nav{
 
 }
 
-#about-section{
-    padding: 5rem;
+#about-page{
     text-align: center;
     img{
         height: 50vh;
+    }
+}
+
+.page{
+    padding: 5rem;
+    > {
         margin: auto;
     }
 }
