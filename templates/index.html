@@ -1,18 +1,18 @@
 {% extends 'layout.html' %}
 
 {% block title %}
-Home
+home
 {% endblock %}
 
 {% block body %}
-    <div id="cutout-container">
+<div id="cutout-container">
     <img id="cutout" src="../static/images/cutout.png">
+</div>
+<div class="vertical-center next-to">
+    <img id="home-avatar" class="animate__animated animate__fadeInLeft" src="../static/images/home-avatar.svg">
+    <div id="home-text">
+        <h1 class="shadow-text animate__animated animate__fadeInRight">Hi, I'm Mayette!</h1>
+        <h1 class="shadow-text animate__animated animate__fadeInRight">Welcome to my world.</h1>
     </div>
-    <div class="vertical-center next-to">
-        <img id="home-avatar" class="animate__animated animate__fadeInLeft" src="../static/images/home-avatar.svg">
-        <div id="home-text">
-            <h1 class="shadow-text animate__animated animate__fadeInRight">Hi, I'm Mayette!</h1>
-            <h1 class="shadow-text animate__animated animate__fadeInRight">Welcome to my world.</h1>
-        </div>
-    </div>
+</div>
 {% endblock %}
