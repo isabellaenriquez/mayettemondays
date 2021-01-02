@@ -27,8 +27,8 @@ def shop():
 
 @app.route("/contact")
 def contact():
-    #return render_template("contact.html")
-    return redirect(url_for('coming_soon'))
+    return render_template("contact.html")
+    #return redirect(url_for('coming_soon'))
 
 @app.route("/coming-soon")
 def coming_soon():
